@@ -1,0 +1,3500 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen_title",
+        "Components": [
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton1",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 800,
+                "Height": 480,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "back",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "back.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "title_Anime_7",
+            "X": 550,
+            "Width": 250,
+            "Height": 250,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Title_Anime_7"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "title_Anime_6",
+            "Width": 100,
+            "Height": 480,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Title_Anime_6"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "title_Anime_5",
+            "X": 280,
+            "Width": 335,
+            "Height": 300,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Title_Anime_5"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "title_Anime_4",
+            "X": 341,
+            "Y": 385,
+            "Width": 178,
+            "Height": 300,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Title_Anime_4"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "title_Anime_3",
+            "Width": 294,
+            "Height": 286,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Title_Anime_3"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "title_Anime_2",
+            "X": -150,
+            "Width": 1150,
+            "Height": 106,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Title_Anime_2"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "title_anime_1",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "Title_Anime_1"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "title",
+            "Y": -402,
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "title.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "start_animation",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "ActionComponent": "title"
+            }
+          },
+          {
+            "InteractionName": "change_screen",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen_select"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "change_screen_to_select",
+            "Description": "select"
+          }
+        ]
+      },
+      {
+        "Name": "Screen_select",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "back",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "back.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel4",
+            "X": 280,
+            "Y": 339,
+            "Width": 240,
+            "Height": 50,
+            "LockPosition": true,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "TextId": "__SingleUse_CB2D",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel3",
+            "X": 280,
+            "Y": 257,
+            "Width": 240,
+            "Height": 50,
+            "LockPosition": true,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "TextId": "__SingleUse_1CW9",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel2",
+            "X": 280,
+            "Y": 175,
+            "Width": 240,
+            "Height": 50,
+            "LockPosition": true,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "TextId": "__SingleUse_T22Q",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1",
+            "X": 280,
+            "Y": 90,
+            "Width": 240,
+            "Height": 50,
+            "LockPosition": true,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "TextId": "__SingleUse_MQF7",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel3"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen3"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel4"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen4"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen1",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "back",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "back.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Container",
+            "Name": "c_MAP",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3",
+                "X": 160,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_1",
+                "X": 400,
+                "Y": 79,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_3",
+                "X": 160,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_4",
+                "X": 400,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5",
+                "X": 640,
+                "Y": 400,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_6",
+                "X": 160,
+                "Y": 239,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_7",
+                "X": 640,
+                "Y": 239,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_8",
+                "X": 640,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_9",
+                "X": 640,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_10",
+                "X": 400,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_12",
+                "X": 160,
+                "Y": 399,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_13",
+                "X": 400,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_15",
+                "X": 640,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block2"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_14",
+                "X": 400,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block3"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_goal",
+                "X": 720,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_goal"
+              }
+            ]
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_me",
+            "Y": 240,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_me",
+            "Moveable": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_move_button",
+            "X": 470,
+            "Y": 330,
+            "Width": 330,
+            "Height": 150,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_move_button"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_timer",
+            "X": 561,
+            "Y": 15,
+            "Width": 242,
+            "Height": 45,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_timer"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "stage",
+            "X": 21,
+            "Y": 12,
+            "Width": 159,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_I7LH",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_start_finish",
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_start_finish"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Screen2",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "back",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "back.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Container",
+            "Name": "c_MAP",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_1",
+                "X": 80,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1",
+                "X": 160,
+                "Y": 400,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_1",
+                "X": 240,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_2",
+                "X": 320,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3",
+                "X": 400,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3_1",
+                "X": 560,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3_2",
+                "X": 640,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3_3",
+                "X": 720,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3_4",
+                "X": 480,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3_5",
+                "X": 560,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3_6",
+                "X": 640,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_4",
+                "X": 240,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_5",
+                "X": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2",
+                "X": 160,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_3",
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1_3_7",
+                "X": 720,
+                "Y": 400,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_goal",
+                "X": 720,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_goal"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "customContainer_wall_v1",
+                "X": 400,
+                "Y": 80,
+                "Width": 160,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_wall_v"
+              }
+            ]
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_me",
+            "Y": 400,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_me",
+            "Moveable": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_move_button",
+            "X": 315,
+            "Y": 330,
+            "Width": 330,
+            "Height": 150,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_move_button"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_timer",
+            "Y": 98,
+            "Width": 242,
+            "Height": 45,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_timer"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "stage",
+            "X": 21,
+            "Y": 12,
+            "Width": 159,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_QIOX",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_start_finish",
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_start_finish"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Screen3",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "back",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "back.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Container",
+            "Name": "c_MAP",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_1",
+                "X": 80,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2",
+                "X": 80,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_1",
+                "X": 80,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_2",
+                "X": 80,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_3",
+                "X": 160,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_4",
+                "X": 240,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5",
+                "X": 320,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_1",
+                "X": 400,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_2",
+                "X": 480,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_3",
+                "X": 560,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_4",
+                "X": 640,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_5",
+                "X": 640,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_5_1",
+                "X": 640,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_5_2",
+                "X": 640,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_5_5_3",
+                "X": 560,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_3",
+                "X": 160,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_4",
+                "X": 238,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_5",
+                "X": 318,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_6",
+                "X": 398,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3_2_7",
+                "X": 478,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_goal1",
+                "Y": 400,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_goal"
+              }
+            ]
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_me",
+            "X": 720,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_me",
+            "Moveable": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_move_button",
+            "X": 470,
+            "Y": 330,
+            "Width": 330,
+            "Height": 150,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_move_button"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_timer",
+            "X": 279,
+            "Y": 258,
+            "Width": 242,
+            "Height": 45,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_timer"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "stage",
+            "X": 321,
+            "Y": 176,
+            "Width": 159,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_XX90",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_start_finish",
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_start_finish"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Screen4",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "back",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Filename": "back.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Container",
+            "Name": "c_MAP",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5_1_1_1",
+                "X": 560,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block3",
+                "X": 80,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_1",
+                "X": 80,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_2",
+                "X": 80,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_3",
+                "X": 80,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_4",
+                "X": 160,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5",
+                "X": 640,
+                "Y": 241,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5_1",
+                "X": 640,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5_1_1",
+                "X": 480,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5_1_1_2",
+                "X": 400,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5_1_1_3",
+                "X": 320,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5_1_1_4",
+                "X": 240,
+                "Y": 320,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_5_1_1_4_1",
+                "X": 240,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_6",
+                "X": 640,
+                "Y": 160,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_7",
+                "X": 640,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_8",
+                "X": 560,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_9",
+                "X": 480,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_10",
+                "X": 320,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_11",
+                "X": 240,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_12",
+                "X": 80,
+                "Y": 400,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_block_13",
+                "X": 400,
+                "Y": 80,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_block1"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "cc_goal",
+                "X": 320,
+                "Y": 240,
+                "Width": 80,
+                "Height": 80,
+                "CustomContainerDefinitionName": "CustomContainer_goal"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "customContainer_wall_h1",
+                "X": 320,
+                "Y": 160,
+                "Width": 80,
+                "Height": 160,
+                "CustomContainerDefinitionName": "CustomContainer_wall_h"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "customContainer_wall_h1_2",
+                "X": 400,
+                "Y": 160,
+                "Width": 80,
+                "Height": 160,
+                "CustomContainerDefinitionName": "CustomContainer_wall_h"
+              },
+              {
+                "Type": "CustomContainerInstance",
+                "Name": "customContainer_wall_h1_3",
+                "X": 480,
+                "Y": 160,
+                "Width": 80,
+                "Height": 160,
+                "CustomContainerDefinitionName": "CustomContainer_wall_h"
+              }
+            ]
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_me",
+            "Y": 399,
+            "Width": 80,
+            "Height": 80,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_me",
+            "Moveable": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_move_button",
+            "X": 470,
+            "Y": 330,
+            "Width": 330,
+            "Height": 150,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_move_button"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_timer",
+            "X": 561,
+            "Y": 15,
+            "Width": 242,
+            "Height": 45,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_timer"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "stage",
+            "X": 21,
+            "Y": 12,
+            "Width": 159,
+            "Height": 48,
+            "LockPosition": true,
+            "TextId": "__SingleUse_9KDA",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "cc_start_finish",
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": true,
+            "CustomContainerDefinitionName": "CustomContainer_start_finish"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "CustomContainer_block3",
+        "Width": 80,
+        "Height": 80,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 80,
+            "Height": 80,
+            "Filename": "block3.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "CustomContainer_block2",
+        "Width": 80,
+        "Height": 80,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 80,
+            "Height": 80,
+            "Filename": "block2.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "CustomContainer_block1",
+        "Width": 80,
+        "Height": 80,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 80,
+            "Height": 80,
+            "Filename": "block1.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "CustomContainer_wall_h",
+        "Width": 80,
+        "Height": 160,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 80,
+            "Height": 160,
+            "Filename": "wall_h.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "CustomContainer_wall_v",
+        "Width": 160,
+        "Height": 80,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 160,
+            "Height": 80,
+            "Filename": "wall_v.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "CustomContainer_goal",
+        "Width": 80,
+        "Height": 80,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 80,
+            "Height": 80,
+            "Filename": "img_goal.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "CustomContainer_me",
+        "Width": 80,
+        "Height": 80,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "img_2",
+            "Y": 11,
+            "Width": 80,
+            "Height": 59,
+            "Filename": "img_kao_1.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "img_1",
+            "Width": 80,
+            "Height": 80,
+            "Filename": "img_kao_1.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ticker",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ticker"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "CustomContainer_timer",
+        "Width": 242,
+        "Height": 45,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "text_timer",
+            "Width": 242,
+            "Height": 45,
+            "TextId": "timer_text",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "timer_value",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ticker",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ticker"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "CustomContainer_move_button",
+        "Width": 330,
+        "Height": 150,
+        "Components": [
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "b_right",
+            "X": 220,
+            "Y": 50,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "b_right",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "b_left",
+            "Y": 50,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "b_left",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "b_down",
+            "X": 110,
+            "Y": 100,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "b_down",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "b_up",
+            "X": 110,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "b_up",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "soft_button_up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_up"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "up"
+            }
+          },
+          {
+            "InteractionName": "soft_button_down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_down"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "down"
+            }
+          },
+          {
+            "InteractionName": "soft_button_right",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_right"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "right"
+            }
+          },
+          {
+            "InteractionName": "soft_button_left",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_left"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "left"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "CustomContainer_start_finish",
+        "Width": 800,
+        "Height": 480,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Alpha": 128,
+            "Clickable": true
+          },
+          {
+            "Type": "Container",
+            "Name": "c_countdown",
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "t_countdown",
+                "Y": 122,
+                "Width": 800,
+                "Height": 276,
+                "LockPosition": true,
+                "TextId": "__SingleUse_8MVS",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "timer_countdown",
+                  "UseBuffer": true,
+                  "BufferSize": 6
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea3",
+                "Y": 62,
+                "Width": 800,
+                "Height": 100,
+                "LockPosition": true,
+                "TextId": "__SingleUse_U7Q9",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "c_start",
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "c_screen_button",
+                "X": 489,
+                "Y": 428,
+                "Width": 296,
+                "Height": 34,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "FlexButton",
+                    "Name": "b_screen_button",
+                    "X": 62,
+                    "Width": 234,
+                    "Height": 34,
+                    "LockPosition": true,
+                    "Alpha": 0,
+                    "ButtonTrigger": {
+                      "Type": "ClickButtonTrigger"
+                    },
+                    "ButtonStyles": [
+                      {
+                        "Type": "BoxWithBorderButtonStyle",
+                        "Width": 234,
+                        "Height": 34,
+                        "LockToFlexButtonSize": true,
+                        "BorderSize": 5,
+                        "ColorReleased": {
+                          "Green": 102,
+                          "Blue": 153
+                        },
+                        "ColorPressed": {
+                          "Green": 153,
+                          "Blue": 204
+                        },
+                        "ColorBorderReleased": {
+                          "Green": 51,
+                          "Blue": 102
+                        },
+                        "ColorBorderPressed": {
+                          "Red": 51,
+                          "Green": 102,
+                          "Blue": 153
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Line",
+                    "Name": "l_screen_button",
+                    "X": 62,
+                    "Y": 13,
+                    "Width": 242,
+                    "Height": 8,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "StartX": 4.0,
+                    "StartY": 4.0,
+                    "EndX": 230.0,
+                    "EndY": 4.0,
+                    "LineWidth": 3.0,
+                    "LineEndingStyle": "Round"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "t_screen_button",
+                    "X": 69,
+                    "Y": -4,
+                    "Width": 217,
+                    "Height": 30,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_618U",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "ToggleButton",
+                    "Name": "tb_screen_button",
+                    "Width": 62,
+                    "Height": 34,
+                    "LockPosition": true,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_on_active.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_round_small_off_dark.png"
+                  }
+                ]
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "b_start",
+                "X": 280,
+                "Y": 215,
+                "Width": 240,
+                "Height": 50,
+                "LockPosition": true,
+                "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+                "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+                "TextId": "__SingleUse_RVZY",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "c_finish",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "b_title",
+                "X": 440,
+                "Y": 394,
+                "Width": 175,
+                "Height": 50,
+                "LockPosition": true,
+                "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_disabled.png",
+                "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_active.png",
+                "TextId": "__SingleUse_DP0N",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "Container",
+                "Name": "container_d",
+                "Width": 800,
+                "Height": 480,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "gd3",
+                    "X": 800,
+                    "Y": 500,
+                    "Width": 215,
+                    "Height": 241,
+                    "LockPosition": true,
+                    "RelativeFilename": "gd3.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "gd2",
+                    "X": 800,
+                    "Y": 500,
+                    "Width": 249,
+                    "Height": 225,
+                    "LockPosition": true,
+                    "RelativeFilename": "gd2.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "gd1",
+                    "X": 800,
+                    "Y": 500,
+                    "Width": 237,
+                    "Height": 259,
+                    "LockPosition": true,
+                    "RelativeFilename": "gd1.png",
+                    "Moveable": true
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "container_c",
+                "Width": 800,
+                "Height": 480,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "gc3",
+                    "X": -200,
+                    "Y": 500,
+                    "Width": 248,
+                    "Height": 235,
+                    "LockPosition": true,
+                    "RelativeFilename": "gc3.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "gc2",
+                    "X": -200,
+                    "Y": 500,
+                    "Width": 256,
+                    "Height": 229,
+                    "LockPosition": true,
+                    "RelativeFilename": "gc2.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "gc1",
+                    "X": -200,
+                    "Y": 500,
+                    "Width": 229,
+                    "Height": 230,
+                    "LockPosition": true,
+                    "RelativeFilename": "gc1.png",
+                    "Moveable": true
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "container_b",
+                "Width": 800,
+                "Height": 480,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "gb3",
+                    "X": 800,
+                    "Y": -220,
+                    "Width": 290,
+                    "Height": 253,
+                    "LockPosition": true,
+                    "RelativeFilename": "gb3.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "gb2",
+                    "X": 800,
+                    "Y": -220,
+                    "Width": 250,
+                    "Height": 231,
+                    "LockPosition": true,
+                    "RelativeFilename": "gb2.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "gb1",
+                    "X": 800,
+                    "Y": -220,
+                    "Width": 238,
+                    "Height": 217,
+                    "LockPosition": true,
+                    "RelativeFilename": "gb1.png",
+                    "Moveable": true
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "container_a",
+                "Width": 800,
+                "Height": 480,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "ga3",
+                    "X": -220,
+                    "Y": -220,
+                    "Width": 255,
+                    "Height": 238,
+                    "LockPosition": true,
+                    "RelativeFilename": "ga3.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "ga2",
+                    "X": -220,
+                    "Y": -220,
+                    "Width": 248,
+                    "Height": 250,
+                    "LockPosition": true,
+                    "RelativeFilename": "ga2.png",
+                    "Moveable": true
+                  },
+                  {
+                    "Type": "Image",
+                    "Name": "ga1",
+                    "X": -220,
+                    "Y": -220,
+                    "Width": 250,
+                    "Height": 244,
+                    "LockPosition": true,
+                    "RelativeFilename": "ga1.png",
+                    "Moveable": true
+                  }
+                ]
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "b_retry",
+                "X": 185,
+                "Y": 394,
+                "Width": 175,
+                "Height": 50,
+                "LockPosition": true,
+                "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_disabled.png",
+                "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_active.png",
+                "TextId": "__SingleUse_2WQM",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "t_time_finish",
+                "Y": 122,
+                "Width": 800,
+                "Height": 236,
+                "LockPosition": true,
+                "TextId": "__SingleUse_DXCK",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "TextId": "timer_finish",
+                  "UseBuffer": true,
+                  "BufferSize": 6
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "Y": 62,
+                "Width": 800,
+                "Height": 100,
+                "LockPosition": true,
+                "TextId": "__SingleUse_TOIW",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "soft_button_start",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_start"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "start"
+            }
+          },
+          {
+            "InteractionName": "soft_button_title",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_title"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen_title"
+            }
+          },
+          {
+            "InteractionName": "soft_button_retry",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_retry"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "retry"
+            }
+          },
+          {
+            "InteractionName": "soft_button_screen_button_1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tb_screen_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggle_screen_button_1"
+            }
+          },
+          {
+            "InteractionName": "soft_button_screen_button_2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_screen_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggle_screen_button_2"
+            }
+          },
+          {
+            "InteractionName": "tick",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "tick"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Title_Anime_1",
+        "Width": 800,
+        "Height": 480,
+        "Components": [
+          {
+            "Type": "Container",
+            "Name": "container2",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "a3",
+                "X": 575,
+                "Y": 500,
+                "Width": 197,
+                "Height": 206,
+                "LockPosition": true,
+                "RelativeFilename": "a3.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "a4",
+                "X": 810,
+                "Y": 416,
+                "Width": 210,
+                "Height": 194,
+                "LockPosition": true,
+                "RelativeFilename": "a4.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "a5",
+                "X": 785,
+                "Y": 585,
+                "Width": 164,
+                "Height": 154,
+                "LockPosition": true,
+                "RelativeFilename": "a5.png"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Width": 800,
+            "Height": 480,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "a2",
+                "X": 32,
+                "Y": 488,
+                "Width": 216,
+                "Height": 232,
+                "LockPosition": true,
+                "RelativeFilename": "a2.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "a1",
+                "X": -183,
+                "Y": 468,
+                "Width": 249,
+                "Height": 235,
+                "LockPosition": true,
+                "RelativeFilename": "a1.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "e500ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 30
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 1
+            }
+          },
+          {
+            "InteractionName": "a1_1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": -69,
+              "Y": 306,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "ActionComponent": "a1"
+            }
+          },
+          {
+            "InteractionName": "a2_1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 124,
+              "Y": 338,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "AnimationDelay": 50,
+              "ActionComponent": "a2"
+            }
+          },
+          {
+            "InteractionName": "a3_1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 521,
+              "Y": 325,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "AnimationDelay": 100,
+              "ActionComponent": "a3"
+            }
+          },
+          {
+            "InteractionName": "a4_1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 646,
+              "Y": 237,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "AnimationDelay": 150,
+              "ActionComponent": "a4"
+            }
+          },
+          {
+            "InteractionName": "a5_1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 661,
+              "Y": 364,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "AnimationDelay": 200,
+              "ActionComponent": "a5"
+            }
+          },
+          {
+            "InteractionName": "e1000ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 500
+            }
+          },
+          {
+            "InteractionName": "c1_1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": -8,
+              "Y": 8,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 50,
+              "ActionComponent": "container1"
+            }
+          },
+          {
+            "InteractionName": "c1_2",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "c1_1"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 10,
+              "ActionComponent": "container1"
+            }
+          },
+          {
+            "InteractionName": "c2_1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 8,
+              "Y": 8,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 50,
+              "ActionComponent": "container2"
+            }
+          },
+          {
+            "InteractionName": "c2_2",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "c2_1"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 10,
+              "ActionComponent": "container2"
+            }
+          },
+          {
+            "InteractionName": "w440ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "c2_2"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 440
+            }
+          },
+          {
+            "InteractionName": "c1_3",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "w440ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": -8,
+              "Y": 8,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 50,
+              "ActionComponent": "container1"
+            }
+          },
+          {
+            "InteractionName": "c1_4",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "c1_3"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 10,
+              "ActionComponent": "container1"
+            }
+          },
+          {
+            "InteractionName": "c2_3",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "w440ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 8,
+              "Y": 8,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 50,
+              "ActionComponent": "container2"
+            }
+          },
+          {
+            "InteractionName": "c2_4",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "c2_3"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "container2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Title_Anime_2",
+        "X": -150,
+        "Width": 1150,
+        "Height": 106,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "a6",
+            "X": 1029,
+            "Width": 121,
+            "Height": 106,
+            "LockPosition": true,
+            "RelativeFilename": "a6.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "e1200ms_d1000ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 72
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 1000
+            }
+          },
+          {
+            "InteractionName": "a6_1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1200ms_d1000ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 1029,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "a6"
+            }
+          },
+          {
+            "InteractionName": "a6_2",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a6_1"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "a6"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Title_Anime_3",
+        "Width": 294,
+        "Height": 286,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "a8",
+            "X": 178,
+            "Y": -13,
+            "Width": 114,
+            "Height": 110,
+            "Visible": false,
+            "LockPosition": true,
+            "RelativeFilename": "a8.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "a7",
+            "X": 7,
+            "Y": 156,
+            "Width": 109,
+            "Height": 110,
+            "Visible": false,
+            "LockPosition": true,
+            "RelativeFilename": "a7.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "e1000ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 500
+            }
+          },
+          {
+            "InteractionName": "a7_1_reset",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 7,
+              "Y": 156,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "a7"
+            }
+          },
+          {
+            "InteractionName": "a7_2_move",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 178,
+              "Y": -13,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "a7"
+            }
+          },
+          {
+            "InteractionName": "a7_3_hide",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a7_2_move"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "a7"
+            }
+          },
+          {
+            "InteractionName": "a8_1_show",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a7_3_hide"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "a8"
+            }
+          },
+          {
+            "InteractionName": "a8_2_move",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a8_1_show"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 7,
+              "Y": 156,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "a8"
+            }
+          },
+          {
+            "InteractionName": "a8_3_hide",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a8_2_move"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "a8"
+            }
+          },
+          {
+            "InteractionName": "a7_4_show",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a8_3_hide"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "a7"
+            }
+          },
+          {
+            "InteractionName": "a8_4_reset",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a7_4_show"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 178,
+              "Y": -13,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "a8"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Title_Anime_4",
+        "X": 322,
+        "Y": 344,
+        "Width": 178,
+        "Height": 300,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "a9",
+            "X": 31,
+            "Y": 122,
+            "Width": 117,
+            "Height": 143,
+            "LockPosition": true,
+            "RelativeFilename": "a9.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "e1000ms_d100ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 100
+            }
+          },
+          {
+            "InteractionName": "e1000ms_d500ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 500
+            }
+          },
+          {
+            "InteractionName": "e1000ms_d1000ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 1000
+            }
+          },
+          {
+            "InteractionName": "e1000ms_d1500ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 1500
+            }
+          },
+          {
+            "InteractionName": "a9_1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d100ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 31,
+              "Y": 20,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1000,
+              "ActionComponent": "a9"
+            }
+          },
+          {
+            "InteractionName": "a9_2",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 11,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1000,
+              "ActionComponent": "a9"
+            }
+          },
+          {
+            "InteractionName": "a9_3",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d1000ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 51,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1000,
+              "ActionComponent": "a9"
+            }
+          },
+          {
+            "InteractionName": "a9_4",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d1500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 31,
+              "Y": 20,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1000,
+              "ActionComponent": "a9"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Title_Anime_5",
+        "X": 280,
+        "Width": 335,
+        "Height": 300,
+        "Components": [
+          {
+            "Type": "Container",
+            "Name": "container2",
+            "Width": 335,
+            "Height": 300,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "a11b",
+                "X": 242,
+                "Y": 63,
+                "Width": 85,
+                "Height": 81,
+                "LockPosition": true,
+                "RelativeFilename": "a11b.png",
+                "Alpha": 0
+              },
+              {
+                "Type": "Image",
+                "Name": "a11a",
+                "X": 240,
+                "Y": 62,
+                "Width": 88,
+                "Height": 82,
+                "LockPosition": true,
+                "RelativeFilename": "a11a.png",
+                "Alpha": 0
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Width": 335,
+            "Height": 300,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "a10d",
+                "X": 240,
+                "Y": 200,
+                "Width": 77,
+                "Height": 68,
+                "LockPosition": true,
+                "RelativeFilename": "a10.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "a10c",
+                "X": 160,
+                "Y": 200,
+                "Width": 77,
+                "Height": 68,
+                "LockPosition": true,
+                "RelativeFilename": "a10.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "a10b",
+                "X": 80,
+                "Y": 200,
+                "Width": 77,
+                "Height": 68,
+                "LockPosition": true,
+                "RelativeFilename": "a10.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "a10a",
+                "Y": 200,
+                "Width": 77,
+                "Height": 68,
+                "LockPosition": true,
+                "RelativeFilename": "a10.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "c1_1_show",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 20
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "container1"
+            }
+          },
+          {
+            "InteractionName": "e1000ms_d200ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 200
+            }
+          },
+          {
+            "InteractionName": "e1000ms_d300ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 300
+            }
+          },
+          {
+            "InteractionName": "e1000ms_d400ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 400
+            }
+          },
+          {
+            "InteractionName": "e1000ms_d500ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 500
+            }
+          },
+          {
+            "InteractionName": "a10a_1_reset",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d200ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Y": 150,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "a10a"
+            }
+          },
+          {
+            "InteractionName": "a10a_2_move",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a10a_1_reset"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "Y": 75,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "ActionComponent": "a10a"
+            }
+          },
+          {
+            "InteractionName": "a10b_1_reset",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d300ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 80,
+              "Y": 150,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "a10b"
+            }
+          },
+          {
+            "InteractionName": "a10b_2_move",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a10b_1_reset"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 80,
+              "Y": 75,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "ActionComponent": "a10b"
+            }
+          },
+          {
+            "InteractionName": "a10c_1_reset",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d400ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 160,
+              "Y": 150,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "a10c"
+            }
+          },
+          {
+            "InteractionName": "a10c_2_move",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a10c_1_reset"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 160,
+              "Y": 75,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "ActionComponent": "a10c"
+            }
+          },
+          {
+            "InteractionName": "a10d_1_reset",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 240,
+              "Y": 150,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "ActionComponent": "a10d"
+            }
+          },
+          {
+            "InteractionName": "a10d_2_move",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a10d_1_reset"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": 240,
+              "Y": 75,
+              "Easing": "Elastic",
+              "EasingOption": "Out",
+              "Duration": 500,
+              "ActionComponent": "a10d"
+            }
+          },
+          {
+            "InteractionName": "a10d_3_hide",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a10d_2_move"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "a10d"
+            }
+          },
+          {
+            "InteractionName": "e2000ms_d100ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 100
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 1
+            }
+          },
+          {
+            "InteractionName": "a11a_1_hide",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e2000ms_d100ms"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "AnimationDelay": 500,
+              "ActionComponent": "a11a"
+            }
+          },
+          {
+            "InteractionName": "a11b_1_show",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e2000ms_d100ms"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "AnimationDelay": 500,
+              "ActionComponent": "a11b"
+            }
+          },
+          {
+            "InteractionName": "a11a_2_show",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a11a_1_hide"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "AnimationDelay": 500,
+              "ActionComponent": "a11a"
+            }
+          },
+          {
+            "InteractionName": "a11b_2_hide",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a11b_1_show"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "AnimationDelay": 500,
+              "ActionComponent": "a11b"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Title_Anime_6",
+        "Width": 100,
+        "Height": 480,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "a14",
+            "X": -83,
+            "Y": 50,
+            "Width": 83,
+            "Height": 73,
+            "LockPosition": true,
+            "RelativeFilename": "a14.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "a13",
+            "X": -122,
+            "Y": 102,
+            "Width": 80,
+            "Height": 75,
+            "LockPosition": true,
+            "RelativeFilename": "a13.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "a12",
+            "X": -177,
+            "Y": 145,
+            "Width": 83,
+            "Height": 79,
+            "LockPosition": true,
+            "RelativeFilename": "a12.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "e500ms_d500ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 30
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 500
+            }
+          },
+          {
+            "InteractionName": "a14",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms_d500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": -17,
+              "Y": 60,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1000,
+              "ActionComponent": "a14"
+            }
+          },
+          {
+            "InteractionName": "a13",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms_d500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": -14,
+              "Y": 116,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1000,
+              "ActionComponent": "a13"
+            }
+          },
+          {
+            "InteractionName": "a12",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e500ms_d500ms"
+            },
+            "Action": {
+              "Type": "ActionMove",
+              "X": -17,
+              "Y": 170,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 1000,
+              "ActionComponent": "a12"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Title_Anime_7",
+        "X": 550,
+        "Width": 250,
+        "Height": 250,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "a15b",
+            "X": 168,
+            "Y": 68,
+            "Width": 74,
+            "Height": 77,
+            "Visible": false,
+            "LockPosition": true,
+            "RelativeFilename": "a15b.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "a15a",
+            "X": 168,
+            "Y": 44,
+            "Width": 74,
+            "Height": 101,
+            "Visible": false,
+            "LockPosition": true,
+            "RelativeFilename": "a15a.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "e1000ms_d500ms",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 60
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 500
+            }
+          },
+          {
+            "InteractionName": "a15a_1_show",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "e1000ms_d500ms"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "a15a"
+            }
+          },
+          {
+            "InteractionName": "a15a_2_w200",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a15a_1_show"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 200
+            }
+          },
+          {
+            "InteractionName": "a15a_3_hide",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a15a_2_w200"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "a15a"
+            }
+          },
+          {
+            "InteractionName": "a15a_4_w_200",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a15a_3_hide"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 200
+            }
+          },
+          {
+            "InteractionName": "a15a_5_show",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a15a_4_w_200"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "a15a"
+            }
+          },
+          {
+            "InteractionName": "a15a_6_w400",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a15a_5_show"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 400
+            }
+          },
+          {
+            "InteractionName": "a15a_7_hide",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a15a_6_w400"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "a15a"
+            }
+          },
+          {
+            "InteractionName": "a15b_1_show",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "a15a_7_hide"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "a15b"
+            }
+          }
+        ]
+      }
+    ],
+    "Name": "button_banban",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen_title",
+    "SelectedStartupLanguage": "JPN",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "24": "LCDGPU2D",
+      "16": "LCDGPU2D"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [
+      {
+        "Key": 1,
+        "Name": "USER_BUTTON"
+      }
+    ],
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommand": "make -f ../gcc/Makefile flash",
+    "FlashTargetIntCommandOverride": "make -f ../gcc/Makefile intflash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U5F9/5G9",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m33",
+    "ProjectFile": "../STM32U5G9J-DK2.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [
+      "GPU2D"
+    ],
+    "AdditionalFeatures": [
+      "GPU2DVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.23.2",
+  "CreatedBy": "4.23.2"
+}

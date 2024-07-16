@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.23.2">
+  <Languages>
+    <Language Id="JPN" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="button">
+      <Text Id="b_left" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Left</Translation>
+      </Text>
+      <Text Id="b_up" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Up</Translation>
+      </Text>
+      <Text Id="b_right" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Right</Translation>
+      </Text>
+      <Text Id="b_down" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Down</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="timer">
+      <Text Id="timer_value" Alignment="Left" TypographyId="Large">
+        <Translation Language="JPN">00.00</Translation>
+      </Text>
+      <Text Id="timer_text" Alignment="Left" TypographyId="Large">
+        <Translation Language="JPN">Time:&lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_CB2D" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Stage 4</Translation>
+      </Text>
+      <Text Id="__SingleUse_9KDA" Alignment="Left" TypographyId="Large">
+        <Translation Language="JPN">Stage:4</Translation>
+      </Text>
+      <Text Id="__SingleUse_XX90" Alignment="Left" TypographyId="Large">
+        <Translation Language="JPN">Stage:3</Translation>
+      </Text>
+      <Text Id="__SingleUse_U7Q9" Alignment="Center" TypographyId="XLarge">
+        <Translation Language="JPN">Count Down</Translation>
+      </Text>
+      <Text Id="timer_countdown" Alignment="Left" TypographyId="XXLarge">
+        <Translation Language="JPN">-0.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_8MVS" Alignment="Center" TypographyId="XXLarge">
+        <Translation Language="JPN">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_618U" Alignment="Left" TypographyId="Middle">
+        <Translation Language="JPN">Screen Button</Translation>
+      </Text>
+      <Text Id="__SingleUse_TOIW" Alignment="Center" TypographyId="XLarge">
+        <Translation Language="JPN">Finish Time</Translation>
+      </Text>
+      <Text Id="__SingleUse_DXCK" Alignment="Center" TypographyId="XXLarge">
+        <Translation Language="JPN">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_2WQM" Alignment="Center" TypographyId="Large">
+        <Translation Language="JPN">Retry</Translation>
+      </Text>
+      <Text Id="__SingleUse_DP0N" Alignment="Center" TypographyId="Large">
+        <Translation Language="JPN">Title</Translation>
+      </Text>
+      <Text Id="__SingleUse_RVZY" Alignment="Center" TypographyId="Large">
+        <Translation Language="JPN">Start</Translation>
+      </Text>
+      <Text Id="__SingleUse_QIOX" Alignment="Left" TypographyId="Large">
+        <Translation Language="JPN">Stage:2</Translation>
+      </Text>
+      <Text Id="__SingleUse_1CW9" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Stage 3</Translation>
+      </Text>
+      <Text Id="__SingleUse_T22Q" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Stage 2</Translation>
+      </Text>
+      <Text Id="__SingleUse_MQF7" Alignment="Center" TypographyId="Default">
+        <Translation Language="JPN">Stage 1</Translation>
+      </Text>
+      <Text Id="timer_finish" Alignment="Left" TypographyId="XLarge">
+        <Translation Language="JPN">00.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_I7LH" Alignment="Left" TypographyId="Large">
+        <Translation Language="JPN">Stage:1</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0-9,0x2e" WildcardCharacterRanges="0-9,0x2e" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Middle" Font="verdana.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0-9,0x2e" WildcardCharacterRanges="0-9,0x2e" />
+    <Typography Id="XXLarge" Font="verdana.ttf" Size="200" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0-9,0x2e" WildcardCharacterRanges="0-9,0x2e" />
+    <Typography Id="XLarge" Font="verdana.ttf" Size="80" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0-9,0x2e" WildcardCharacterRanges="0-9,0x2e" />
+  </Typographies>
+</TextDatabase>
